@@ -33,6 +33,7 @@ return {
         "prettier", -- prettier formatter
         "stylua", -- lua formatter
 	"clang-format", --c++ formatter
+	"goimports", --go formatter
       },
     },
     dependencies = {
