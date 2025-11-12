@@ -9,10 +9,10 @@ return {
 		keymap = {
 			preset = "none", -- <C-Space> triggers, <CR> accepts
 
-			["<Tab>"] = { "select_next" },
-			["<S-Tab>"] = { "select_prev" },
-			["<CR>"] = { "accept" },
-			["<C-e>"] = { "hide" },
+			["<Tab>"] = { "select_next", "fallback" },
+			["<S-Tab>"] = { "select_prev", "fallback" },
+			["<CR>"] = { "accept", "fallback" },
+			["<C-e>"] = { "hide", "fallback" },
 		},
 		completion = {
 			keyword_length = 1,
